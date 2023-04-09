@@ -1,22 +1,52 @@
-# Expresso TS CLI Tool
+---
+sidebar_position: 1
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Overview
 
 The Expresso TS CLI is a command-line interface tool that helps you to create `ExpressoTS` projects, develop, and maintain your applications and resources created. It assists in multiple ways, including scaffolding the project as well as the services offered by the application such as use cases, controllers, providers and more.
 
-## This is an example of the CLI for the Expresso TS framework
-
-[![asciicast](https://asciinema.org/a/7diTOTyY653mpdA0JtugjRn9a.svg)](https://asciinema.org/a/7diTOTyY653mpdA0JtugjRn9a)
-
 ## Installation 💻
 
-```bash
-npm install -g @expressots/cli
-```
+<Tabs>
+  <TabItem value="npm" label="NPM" default>
+
+    npm install -g @expressots/cli
+
+  </TabItem>
+  <TabItem value="yarn" label="Yarn">
+
+    yarn global add @expressots/cli
+
+  </TabItem>
+  <TabItem value="pnpm" label="PNPM">
+
+    pnpm add -g @expressots/cli
+
+  </TabItem>
+</Tabs>
+
+:::tip
+Alternatively, you can use this command npx @expressots/cli@latest without installing the cli globally.
+:::
 
 ## Creating a new project
 
 ```bash
 expressots new <project-name>
 ```
+
+Read the section on [Creating New Project](new) for more detailed information to create your project.
+
+## Creating a new resource
+
+```bash
+expressots generate <resource> <resource-name>
+```
+
+Read the section on [Creating New Resource](generate) for more detailed information to create your resource.
 
 ## Other commands
 
